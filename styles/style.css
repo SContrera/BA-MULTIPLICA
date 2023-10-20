@@ -41,6 +41,8 @@ body {
 
 .header{
     grid-area: header;
+    background-color: black;
+    color: yellow;
 }
 
 .header-flex{
@@ -48,8 +50,14 @@ body {
     flex-flow:column wrap;
     justify-content: center;
     align-content: center;
+    border: 1px red solid;
     
+}
+.header-flex>div{
+    border:solid 1px white;
     
+   
+
 }
 /* ---------------------------------------------------------------------------------------- */
 .navbar{
