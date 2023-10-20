@@ -22,6 +22,7 @@ body {
     color: rgb(0, 70, 131);
     
 }
+@media (max-width: 768px) {
 .grid-container{
     display: grid;
     grid-template:        'header'  120px
@@ -83,3 +84,4 @@ body {
 }
 
 
+}
