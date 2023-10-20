@@ -15,7 +15,7 @@ html{
 
 body {
     
-    /* background: #fff url(../img/fondo.jpg) no-repeat fixed; */
+    background: #fff url(../img/fondo.jpg) no-repeat fixed;
     background-size: cover;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     text-align: center;
@@ -29,7 +29,7 @@ body {
     grid-template:        'header'  120px
                           'navbar'  auto
                           'main'    auto
-                          'footer'   40px;
+                          'footer'  40px;
 }
 
 .grid-container>* {
@@ -43,22 +43,18 @@ body {
     grid-area: header;
     background-color: black;
     color: yellow;
+    font-size: 0.8rem;
 }
 
 .header-flex{
+    height: 100%;
     display:flex;
     flex-flow:column wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    border: 1px red solid;
     
 }
-.header-flex>div{
-    border:solid 1px white;
-    
-   
 
-}
 /* ---------------------------------------------------------------------------------------- */
 .navbar{
     grid-area:  navbar;
@@ -78,11 +74,23 @@ body {
     grid-area:  main;
 }
 
-.main-flex{
-    display:flex;
+.main-grid{
+    display:grid;
     height: 100%;
-    flex-flow:column wrap;
     justify-content: space-around;
+    align-items: start;
+    grid-template-columns: 300px ;
+    grid-template-rows:    100px;
+    grid-template-areas: 
+                         "h1-main"
+                         "receta1"
+                         "receta2"
+                         "receta3";
+    
+}
+
+.main-grid>div{
+    border:1px solid red
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -101,3 +109,17 @@ body {
 }
 
 
+/* @media screen and (min-width: 450px) {
+    .grid-container {
+    
+            grid-template:
+                'header  header ' 80px
+                'navbar   main  ' auto
+                'footer  footer' 20px /
+                 90px      auto   ;
+    
+        }
+
+
+
+    } */
