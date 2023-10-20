@@ -60,9 +60,8 @@ body {
     display: flex;
     height: 100%;
     flex-flow: column wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+    justify-content: center;
+   
 
 }
 /* ---------------------------------------------------------------------------------------- */
