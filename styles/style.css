@@ -24,7 +24,7 @@ body {
 }
 .grid-container{
     display: grid;
-    grid-template:        'header'  100px
+    grid-template:        'header'  120px
                           'navbar'  200px
                           'main'    auto
                           'footer'  40px; 
