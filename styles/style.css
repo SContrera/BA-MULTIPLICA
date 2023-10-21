@@ -2,34 +2,34 @@
 @import 'animate.css';
 
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
 
 body {
-    
+
     background: #fff url(../img/fondo.jpg) no-repeat fixed;
     background-size: cover;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     text-align: center;
     min-height: 100%;
     color: rgb(0, 70, 131);
-    
+
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template:        'header'  120px
-                          'navbar'  115px
-                          'main'    auto
-                          'footer'  40px;
+    grid-template: 'header' 120px
+        'navbar' 115px
+        'main' auto
+        'footer' 40px;
 }
 
 .grid-container>* {
@@ -39,73 +39,74 @@ body {
 }
 
 
-.header{
+.header {
     grid-area: header;
     background-color: black;
     color: yellow;
     font-size: 0.8rem;
 }
 
-.header-flex{
+.header-flex {
     height: 100%;
-    display:flex;
-    flex-flow:column wrap;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-content: center;
-    
+
 }
 
 /* ---------------------------------------------------------------------------------------- */
-.navbar{
+.navbar {
     background-color: rgba(0, 0, 0, 0.269);
-    grid-area:  navbar;
+    grid-area: navbar;
     font-size: 1.2rem;
 }
 
-.navbar-flex{
+.navbar-flex {
     display: flex;
     height: 100%;
     flex-flow: column wrap;
     justify-content: space-between;
 
 }
-.navbar-flex>*{
+
+.navbar-flex>* {
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.242);
     border-radius: 10px;
-    
+
 }
 
 /* ---------------------------------------------------------------------------------------- */
-.main{
-    grid-area:  main;
+.main {
+    grid-area: main;
 }
 
-.main-grid{
-    display:grid;
+.main-grid {
+    display: grid;
     height: 100%;
     justify-content: space-around;
     align-items: start;
-    grid-template-columns: 300px ;
-    grid-template-rows:    100px;
-    grid-template-areas: 
-                         "h1-main"
-                         "receta1"
-                         "receta2"
-                         "receta3";
-    
+    grid-template-columns: 300px;
+    grid-template-rows: 100px;
+    grid-template-areas:
+        "h1-main"
+        "receta1"
+        "receta2"
+        "receta3";
+
 }
 
 
 
 /* ---------------------------------------------------------------------------------------- */
-.footer{
+.footer {
     background-color: black;
     color: yellow;
     grid-area: footer;
 }
 
-.footer-flex{
-    
+.footer-flex {
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -114,17 +115,73 @@ body {
 }
 
 
-/* @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
+
     .grid-container {
+
+        grid-template:
+            'header  header ' 80px
+            'navbar   main  ' auto
+            'footer  footer' 20px /
+            100px auto;
+
+    }
+
+
+    body {
+
+        color: rgba(251, 127, 255, 0.837);
+    }
+
+    /* --------------------------------- header ------------------ */
+
+    .header-flex {
+
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    /* --------------------------------- main ------------------ */
+
+    .receta1>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .receta2>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .receta3>img {
+        height: 300px;
+        width: 300px;
+    }
+
+
+
+    .main-grid {
+        border: 1px solid black;
+        display: grid;
+        /* height: 100%; */
+        justify-content: space-around;
+        /* align-items: start; */
+        /* grid-template-columns: 300px;
+        grid-template-rows: 300px; */
+        grid-template-areas:
+            "h1-main" 
+            "receta1" 
+            "receta2"
+            "receta3";
     
-            grid-template:
-                'header  header ' 80px
-                'navbar   main  ' auto
-                'footer  footer' 20px /
-                 90px      auto   ;
-    
-        }
+    }
+    .main-grid>*{
+        border: 1px solid black
+    }
 
 
 
-    } */
+
+}
