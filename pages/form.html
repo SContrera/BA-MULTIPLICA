@@ -3,60 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <title> Recetas BA MULTIPLICA </title>
 </head>
 
 <body class="grid-container">
-    <header class="header">
+     <header class="header">
                 <div class="header-flex">
                         <h1 class="animate__animated animate__bounce">RECETAS BA MULTIPLICA </h1>
 
                         <h2 class="animate__animated animate__bounce"> Las mejores recetas del país! </h2>
-                        <div> Logo</div>
+
+                        <div> <img src="../img/logo.jpeg" alt="logo" height="40px"> </div>
                 </div>
-    </header>
+     </header>
 
     <nav class="navbar">
         <div class="navbar-flex">
 
                 <div> <a href="../index.html"> Inicio</a> </div>
 
-                <div> <a href="content.html"> Lista de recetas</a> </div>
+                <div> <a href="../pages/content.html"> Lista de recetas</a> </div>
 
-                <div> <a href="form.html"> Contacto</a>  </div>
+                <div> <a href="../pages/form.html"> Contacto</a>  </div>
 
-                <div> <a href="faq.html"> Preguntas frecuentes </a> </div>
+                <div> <a href="../pages/faq.html"> Preguntas frecuentes </a> </div>
 
         </div>
 
     </nav>
 
     <main class="main">
-        <div class="main-flex">
-            <h1> Recetas más vistas</h1> <br>
-                
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nesciunt doloremque placeat, explicabo molestiae voluptas quia facere expedita rem ad neque sit rerum cumque id delectus soluta dolorem animi vitae.
-
-                <h3> Quienes somos ? </h3>
-                <p> Somos Recetas Ba MULTIPLICA. Le traeremos cada semana una receta nueva. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Quasi, unde distinctio alias labore aperiam minima dicta ipsa reprehenderit illo dolore,
-                    nostrum vel fugiat, debitis perferendis. Vitae sapiente adipisci facere minus! Para más información haga click
-                    <a href="https://www.google.com.ar"> Para más información, haga click aquí.</a>
-                </p>
-
-                <h1>Lista de recetas</h1>
-                <ul>
-                    <li> Receta de pizza</li>
-                    <li>Receta de guiso</li>
-                    <li> Contactenos </li>
-
-                </ul>
-                <p><a href="https://www.recetasfacil.com" target="_blank">### Más recetas ###</a></p>
+        <div class="main-grid">
 
 
+            <div class="h1-main">
+                <h1> Contactenos!</h1>
+            </div>
+
+            <div class="receta1">
+                <fieldset>
+                    <!-- <legend>Acá puede ir como el titúlo para que escriban los mancos que lo vean:</legend> -->
+                        <form action="">
+                            <label for="firstName">Nombre:</label>
+                            <input type="text" name="firstName" id="firstName">
+                            <label for="lastName">Apellido:</label>
+                            <input type="text" name="lastName" id="lastName">
+                            <label for="phone">Teléfono:</label>
+                            <input type="text" name="phone" id="phone"><br>
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="abcd@gmail.com"> <br>
+                            <label for="adress">Dirección:</label>
+                            <input type="text" name="adress">
+                            <label for="city">Ciudad:</label>
+                            <input type="text" id="city"> <br>
+                            <label for="zipcode">Código postal:</label>
+                            <input type="text" id="zipcode"> <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">¿No sabes tu código postal?</a><br><br>
+                            <label for="request">Consulta:</label>
+                            <textarea name="" id="request" cols="30" rows="10" placeholder="Escriba aquí su consulta.."></textarea> <br>
+                            <input type="submit">
+                            <input type="reset">
+                        </form>
+                </fieldset>
+            </div>      
+            <br> <br>
+            <h3>Ubicación de nuestro local</h3><br><br>
+            <div class="receta2">
+
+                <iframe width="300" height="300" style="border:0"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5107480042525!2d-58.358978724767994!3d-34.6670568608452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33346fb35a30d%3A0x5832aab74661c2ad!2sAv.%20Bartolom%C3%A9%20Mitre%201660%2C%20B1873AMB%20Crucecita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1692195141424!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            
+            </div>
         </div>
     </main>
     <footer class="footer">
