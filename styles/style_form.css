@@ -112,18 +112,77 @@ body {
     height: 100%;
 }
 
+/* ----------------------Medias Q-------------------------- */
+@media screen and (min-width: 450px) {
 
-/* @media screen and (min-width: 450px) {
     .grid-container {
-    
-            grid-template:
-                'header  header ' 80px
-                'navbar   main  ' auto
-                'footer  footer' 20px /
-                 90px      auto   ;
-    
-        }
+
+        grid-template:
+            'header  header ' 80px
+            'navbar   main  ' auto
+            'footer  footer' 20px /
+            100px auto;
+
+    }
+
+
+    body {
+
+        color: rgba(251, 127, 255, 0.837);
+    }
+
+    /* --------------------------------- header ------------------ */
+
+    .header-flex {
+
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    /* --------------------------------- main ------------------ */
+
+    .receta1>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .receta2>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .receta3>img {
+        height: 300px;
+        width: 300px;
+    }
 
 
 
-    } */
+    .main-grid {
+        
+        display: grid;
+        justify-content: space-around;
+        /* align-items: start; */
+        /* grid-template-columns: 300px;
+        grid-template-rows: 300px; */
+        grid-template-areas:
+            "h1-main" 
+            "receta1";
+            
+    }
+
+    .navbar-flex{
+        display:flex;
+        flex-flow: column wrap;
+        border:1px solid;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+
+
+
+
+}
